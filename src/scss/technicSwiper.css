@@ -1,0 +1,76 @@
+.technic {
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.technic-slide {
+    width: 240px !important;
+    height: 160px !important;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.technic-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 16px 80px 0 16px;
+}
+
+.technic-go {
+    position: absolute;
+    top: 86px;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+
+    .opening-button {
+        display: none;
+    }
+
+    .technic-slide {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .inactiv {
+        display: none;
+    }
+
+    .technic {
+        padding: 0 24px;
+    }
+
+    .technic-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .tech-inactiv768 {
+        display: block;
+    }
+
+    .inactiv {
+        display: none;
+    }
+
+    .technic {
+        padding: 0 32px;
+    }
+
+    .technic-wrapper {
+        gap: 32px !important;
+    }
+}
