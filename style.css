@@ -7,10 +7,12 @@ body {
   color: #1B1C21;
   background-color: #F8F8F8;
   min-width: 320px;
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 img {
@@ -24,11 +26,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.conteiner {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .btn {
@@ -120,6 +117,10 @@ a {
   text-align: right;
 }
 
+.blog-info__image-cps {
+  width: 100%;
+}
+
 .blog-title::before {
   content: "";
   background-color: #41F6D7;
@@ -155,7 +156,7 @@ a {
   background-image: url(./static/expand.svg); 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .blog-feedback--invisible {
       display: none;
@@ -168,7 +169,7 @@ a {
   .blog-desctop {
       display: none;
   }
-
+  
   .changing-section {
       background-color: #FFFFFF;
       padding: 24px 16px;
@@ -212,7 +213,7 @@ a {
   }
 
   .blog-info__desc {
-      display: none;
+    padding: 0 16px;
   }
 
   .blog-info-further  {
@@ -472,6 +473,7 @@ a {
     font-family: "TT Lakes", "Arial", sans-serif;
     background-color: #FFFFFF;
     max-width: 320px;
+    height: 100vh;
     margin: 0;
     padding: 30px 29px 1300px 22px;
     position: absolute;
@@ -499,7 +501,7 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     
 }
 
@@ -566,7 +568,7 @@ a {
 }
 
 .contacts-tel {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .navigator-lang {
@@ -599,7 +601,7 @@ a {
     .invisible-menu {
         display: none; 
         position: fixed; 
-        z-index: 1; 
+        z-index: 2; 
         left: 0;
         top: 0;
         width: 100%; 
@@ -610,16 +612,15 @@ a {
     .nav-menu {
         display: none; 
         position: fixed; 
-        z-index: 1; 
+        z-index: 2; 
         left: 0;
         top: 0;
         max-width: 320px;
         width: 100%; 
-        height: 100%; 
+        height: 100vh;
         box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
         padding: 18px 0 32px 24px;
         transition: left .45s ease-in-out;
-        overflow-y: auto;
     }
 }
 
@@ -627,6 +628,10 @@ a {
 
     .navigator-header__close {
         display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
     }
 }
 
@@ -742,8 +747,8 @@ a {
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 24px;
-        margin-bottom: 24px;
-        margin: 0 auto;
+        width: 768px;
+        margin: 0 auto 24px auto;
     }
 
     .brend-slide {
@@ -858,8 +863,9 @@ a {
     .technic-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
-        margin-bottom: 24px;
+        gap: 13px;
+        margin: 0 auto;
+        width: 768px;
     }
 }
 
@@ -878,7 +884,8 @@ a {
     }
 
     .technic-wrapper {
-        gap: 32px !important;
+        gap: 20px !important;
+        width: 1100px;
     }
 }
 .prices-services {
