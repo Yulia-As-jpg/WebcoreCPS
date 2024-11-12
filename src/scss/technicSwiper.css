@@ -51,8 +51,9 @@
     .technic-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
-        margin-bottom: 24px;
+        gap: 13px;
+        margin: 0 auto;
+        width: 768px;
     }
 }
 
@@ -71,6 +72,7 @@
     }
 
     .technic-wrapper {
-        gap: 32px !important;
+        gap: 20px !important;
+        width: 1100px;
     }
 }

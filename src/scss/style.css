@@ -12,6 +12,7 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 img {
@@ -25,10 +26,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.conteiner {
-  margin: 0 auto;
 }
 
 .btn {
@@ -156,10 +153,10 @@ a {
   left: 15px;
   width: 24px;
   height: 24px;
-  background-image: url('./img/expand.svg'); 
+  background-image: url('../img/expand.svg'); 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .blog-feedback--invisible {
       display: none;
@@ -172,7 +169,7 @@ a {
   .blog-desctop {
       display: none;
   }
-
+  
   .changing-section {
       background-color: #FFFFFF;
       padding: 24px 16px;
@@ -216,7 +213,7 @@ a {
   }
 
   .blog-info__desc {
-      display: none;
+    padding: 0 16px;
   }
 
   .blog-info-further  {

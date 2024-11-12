@@ -109,8 +109,8 @@
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 24px;
-        margin-bottom: 24px;
-        margin: 0 auto;
+        width: 768px;
+        margin: 0 auto 24px auto;
     }
 
     .brend-slide {
