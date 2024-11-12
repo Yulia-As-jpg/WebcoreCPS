@@ -264,6 +264,10 @@ a {
       margin: 0 20px 0 4px;
   }
 
+  .blog-title{
+    width: 1100px;
+  }
+
   .pc-invisidle {
       display: flex;
       flex-wrap: nowrap;
@@ -293,7 +297,6 @@ a {
       display: flex;
       justify-content: space-between;
       padding: 0 24px;
-      gap: 20px;
   }
 
   .title2 {
@@ -369,7 +372,6 @@ a {
   .blog-info {
       display: flex;
       flex-wrap: wrap;
-      gap: 36px;
       padding-left: 34px;
       padding-right: 29px;
   }
