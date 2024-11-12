@@ -264,6 +264,10 @@ a {
       margin: 0 20px 0 4px;
   }
 
+  .blog-title{
+    width: 1100px;
+  }
+
   .pc-invisidle {
       display: flex;
       flex-wrap: nowrap;
@@ -293,7 +297,6 @@ a {
       display: flex;
       justify-content: space-between;
       padding: 0 24px;
-      gap: 20px;
   }
 
   .title2 {
@@ -369,7 +372,6 @@ a {
   .blog-info {
       display: flex;
       flex-wrap: wrap;
-      gap: 36px;
       padding-left: 34px;
       padding-right: 29px;
   }
@@ -475,7 +477,7 @@ a {
     max-width: 320px;
     height: 100vh;
     margin: 0;
-    padding: 30px 29px 1300px 22px;
+    padding: 20px 25px 20px 22px;
     position: absolute;
     top: 0;
     left: 0;
@@ -490,7 +492,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 47px;
+    margin-bottom: 20px;
 }
 
 .navigator-header__logo {
@@ -501,12 +503,12 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     
 }
 
 .navigator-body__item {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .navigator-body__link {
@@ -568,7 +570,7 @@ a {
 }
 
 .contacts-tel {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .navigator-lang {
@@ -632,6 +634,7 @@ a {
 
     .nav-menu {
         position: fixed;
+        height: 100vh;
     }
 }
 
