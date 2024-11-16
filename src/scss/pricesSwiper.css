@@ -59,10 +59,9 @@
     content: '';
     background-image: url(../img/Line.svg);
     background-repeat: no-repeat;
-    position: absolute;
-    left: 311px;
     width: 10px;
     height: 10px;
+    margin-left: 10px;
 
 }
 
