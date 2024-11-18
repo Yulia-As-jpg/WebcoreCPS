@@ -316,6 +316,11 @@ a {
       margin-right: 48px;
   }
 
+  .wrapper-absolute {
+
+    width: 770px;
+  }
+
   .blog-info__image {
       display: flex;
       flex: 1;
