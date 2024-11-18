@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "TT Lakes", "Arial", sans-serif;
+  font-family: "TT Lakes", sans-serif;
   color: #1B1C21;
   background-color: #F8F8F8;
   margin: 0 auto;
@@ -25,6 +25,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 
 .btn {
   background: none;
@@ -90,7 +91,6 @@ a {
 }
 
 .blog-title {
-  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
   border-top: 1px solid #D9FFF5;
   display: flex;
   align-items: center;
@@ -101,8 +101,9 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  font-family: "TT Lakes";
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.06em;
 }
@@ -133,6 +134,10 @@ a {
   line-height: 20px;
   letter-spacing: 0.02em;
   margin: 0;
+}
+
+.blog-info__desc {
+  margin-bottom: 16px;
 }
 
 .blog-info__link {
@@ -217,7 +222,6 @@ a {
 
   .blog-info__desc {
     margin-top: 0;
-    margin-bottom: 16px;
     padding: 0 16px;
   }
 
@@ -404,6 +408,13 @@ a {
 
   .content {
       margin-bottom: 51px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .wrapper-absolute {
+    width: 1120px;
   }
 }
 

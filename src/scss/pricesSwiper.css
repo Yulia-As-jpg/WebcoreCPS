@@ -112,7 +112,7 @@
         background-color: #ffffff;
         border-radius: 6px;
         border: none;
-        margin: 0 auto;
+        margin: 0 auto 24px;
     }
 
     .prices-slide {
@@ -185,5 +185,14 @@
     .prices-wrapper {
         max-width: 1056px;
         margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .prices-info {
+        padding-left: 32px;
+    }
+
+    .headline-prices__empty {
+        width: 250px;
     }
 }

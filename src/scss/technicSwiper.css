@@ -1,8 +1,3 @@
-.technic {
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
 .technic-slide {
     width: 240px !important;
     height: 160px !important;
@@ -17,7 +12,7 @@
     line-height: 24px;
     letter-spacing: -0.02em;
     margin: 0;
-    padding: 16px 80px 0 16px;
+    padding: 16px 50px 0 16px;
 }
 
 .technic-go {
@@ -44,16 +39,16 @@
         display: none;
     }
 
-    .technic {
-        padding: 0 24px;
+    .technic-slide {
+        width: 224px !important;
     }
 
     .technic-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 13px;
-        margin: 0 auto;
-        width: 768px;
+        gap: 24px;
+        padding: 0 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -67,12 +62,10 @@
         display: none;
     }
 
-    .technic {
-        padding: 0 32px;
-    }
-
     .technic-wrapper {
         gap: 20px !important;
         width: 1100px;
+        padding: 0 32px;
+        margin-bottom: 24px;
     }
 }

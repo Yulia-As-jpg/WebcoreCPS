@@ -6,16 +6,18 @@
   display: none;
   font-family: "TT Lakes", "Arial", sans-serif;
   background-color: #FFFFFF;
-  max-width: 320px;
+  width: 320px;
   height: 100%;
   margin: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   z-index: 1005;
   box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
   padding: 24px 16px;
+  overflow: hidden;
 }
+
 
 .close-call, .close-chat {
   margin-bottom: 40px;
@@ -25,8 +27,9 @@
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 252, 252, 1);
@@ -105,4 +108,20 @@
     top: 11px;
 }
 
+@media (min-width: 768px) {
+
+  .modal {
+    width: 440px;
+    padding: 40px 32px;
+  }
+
+  .modal-title_text {
+
+    width: ;
+  }
+
+  .modal-btn {
+    left: 200px;
+  }
+}
 
