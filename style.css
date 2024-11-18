@@ -336,6 +336,11 @@ a {
 
 @media (min-width: 1120px) {
 
+  .wrapper-absolute {
+
+    width: 800px;
+  }
+
   .changing-section {
     padding: 0;
   }
