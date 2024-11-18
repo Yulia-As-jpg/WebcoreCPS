@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "TT Lakes", "Arial", sans-serif;
+  font-family: "TT Lakes", sans-serif;
   color: #1B1C21;
   background-color: #F8F8F8;
   margin: 0 auto;
@@ -25,6 +25,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 
 .btn {
   background: none;
@@ -90,7 +91,6 @@ a {
 }
 
 .blog-title {
-  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
   border-top: 1px solid #D9FFF5;
   display: flex;
   align-items: center;
@@ -101,8 +101,9 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  font-family: "TT Lakes";
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.06em;
 }
@@ -133,6 +134,10 @@ a {
   line-height: 20px;
   letter-spacing: 0.02em;
   margin: 0;
+}
+
+.blog-info__desc {
+  margin-bottom: 16px;
 }
 
 .blog-info__link {
@@ -217,7 +222,6 @@ a {
 
   .blog-info__desc {
     margin-top: 0;
-    margin-bottom: 16px;
     padding: 0 16px;
   }
 
@@ -407,6 +411,13 @@ a {
   }
 }
 
+@media (min-width: 1440px) {
+
+  .wrapper-absolute {
+    width: 1120px;
+  }
+}
+
 
   
 
@@ -468,8 +479,9 @@ a {
         padding: 0 25px 16px 34px;
     }
 }
-* {
-    box-sizing: border-box;
+a {
+    text-decoration: none;
+    color: #1B1C21;
 }
 
 .nav-menu {
@@ -479,13 +491,15 @@ a {
     height: 100%;
     margin: 0;
     padding: 20px 25px 20px 20px;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
 }
-  
-a {
-    text-decoration: none;
-    color: #1B1C21;
+
+.navigator-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .navigator-header {
@@ -617,21 +631,17 @@ a {
         z-index: 2; 
         left: 0;
         top: 0;
-        max-width: 320px;
-        width: 100%; 
+        width: 320px;
         box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
         transition: left .45s ease-in-out;
     }
+
 }
 
 @media (min-width: 1120px) {
 
-    .conteiner {
-        display: flex;
-        justify-content: center;
-    }
-
     .wrapper-absolute {
+        position: relative;
         left: 320px;
     }
 
@@ -640,12 +650,11 @@ a {
     }
 
     .nav-menu {
-        padding: 20px 25px 20px 43px;
-        height: 2030px;
-    }
-
-    .navigator-body__list {
-        margin-bottom: 100px;
+        width: 320px;
+        padding: 20px 25px 20px 20px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
     }
 
     .button-info {
@@ -662,12 +671,12 @@ a {
 }
 
 
-.brend {
-    margin: 0 auto;
-}
+
+
+
+
 
 .brend-header {
-    padding: 16px 15px;
     margin-bottom: 16px;
 }
 
@@ -773,8 +782,8 @@ a {
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 24px;
-        width: 768px;
-        margin: 0 auto 24px auto;
+        padding: 0 24px;
+        margin-bottom: 24px;
     }
 
     .brend-slide {
@@ -784,6 +793,10 @@ a {
         border: 1px solid #EAEAEA;
         background: #FFF;
         padding: 0 16px;
+    }
+
+    .opening-button {
+        margin-left: 24px;
     }
 
     .open-btn {
@@ -829,18 +842,14 @@ a {
         flex-wrap: wrap !important;
         gap: 16px 32px;
         margin-bottom: 24px;
-        padding: 24px 20px;
+        padding: 0 32px;
+        width: 1100px;
     }
 
     .opening-button {
         padding-left: 32px;
     }
 }
-.technic {
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
 .technic-slide {
     width: 240px !important;
     height: 160px !important;
@@ -855,7 +864,7 @@ a {
     line-height: 24px;
     letter-spacing: -0.02em;
     margin: 0;
-    padding: 16px 80px 0 16px;
+    padding: 16px 50px 0 16px;
 }
 
 .technic-go {
@@ -882,16 +891,16 @@ a {
         display: none;
     }
 
-    .technic {
-        padding: 0 24px;
+    .technic-slide {
+        width: 224px !important;
     }
 
     .technic-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 13px;
-        margin: 0 auto;
-        width: 768px;
+        gap: 24px;
+        padding: 0 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -905,13 +914,11 @@ a {
         display: none;
     }
 
-    .technic {
-        padding: 0 32px;
-    }
-
     .technic-wrapper {
         gap: 20px !important;
         width: 1100px;
+        padding: 0 32px;
+        margin-bottom: 24px;
     }
 }
 .prices-services {
@@ -1028,7 +1035,7 @@ a {
         background-color: #ffffff;
         border-radius: 6px;
         border: none;
-        margin: 0 auto;
+        margin: 0 auto 24px;
     }
 
     .prices-slide {
@@ -1101,6 +1108,15 @@ a {
     .prices-wrapper {
         max-width: 1056px;
         margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .prices-info {
+        padding-left: 32px;
+    }
+
+    .headline-prices__empty {
+        width: 250px;
     }
 }
 .publication {
@@ -1174,16 +1190,18 @@ a {
   display: none;
   font-family: "TT Lakes", "Arial", sans-serif;
   background-color: #FFFFFF;
-  max-width: 320px;
+  width: 320px;
   height: 100%;
   margin: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   z-index: 1005;
   box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
   padding: 24px 16px;
+  overflow: hidden;
 }
+
 
 .close-call, .close-chat {
   margin-bottom: 40px;
@@ -1193,8 +1211,9 @@ a {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 252, 252, 1);
@@ -1273,6 +1292,17 @@ a {
     top: 11px;
 }
 
+@media (min-width: 768px) {
+
+  .modal {
+    width: 440px;
+    padding: 40px 32px;
+  }
+
+  .modal-btn {
+    left: 200px;
+  }
+}
 
 
 
