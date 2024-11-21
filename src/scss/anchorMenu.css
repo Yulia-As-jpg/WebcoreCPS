@@ -16,13 +16,6 @@
     border: 2px solid transparent;
     cursor: pointer;
     display: flex;
-    }
-    
-.blog-nav__link:focus {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    outline: none;
-    background-color: #FFFFFF;
 }
 
 .blog-nav__list {
@@ -31,10 +24,18 @@
     margin-bottom: 24px;
     padding: 0;
 }
-
+    
 .blog-nav__list::-webkit-scrollbar {
     display: none;
 }
+    
+.blog-nav__link:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
 
 @media (min-width: 1120px) {
 

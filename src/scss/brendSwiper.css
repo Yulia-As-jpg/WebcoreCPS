@@ -104,8 +104,13 @@
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 24px;
+        margin: 0 auto 24px;
         padding: 0 24px;
-        margin-bottom: 24px;
+        width: 768px;
+    }
+
+    .title2 {
+        padding: 16px 24px;
     }
 
     .brend-slide {
@@ -152,6 +157,10 @@
 
 @media (min-width: 1120px) {
 
+    .brend {
+        padding: 0 32px;
+    }
+
     .inactive768.inactive {
         display: block;
     }
@@ -160,11 +169,14 @@
         display: none;
     }
 
+    .title2 {
+        padding: 16px 0;
+    }
+
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 32px;
         margin-bottom: 24px;
-        padding: 0 32px;
         width: 1100px;
     }
 

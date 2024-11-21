@@ -34,10 +34,6 @@
     top: 10px;
 }
 
-.prices-info {
-    padding-left: 24px;
-}
-
 .prices-info__text {
     font-size: 14px;
     line-height: 20px;
@@ -91,6 +87,11 @@
     }
     .prices-info__text {
         max-width: 288px;
+        padding: 16px 16px 0;
+    }
+
+    .prices-btn__offer {
+        padding-left: 16px;
     }
 }
 
@@ -113,6 +114,10 @@
         border-radius: 6px;
         border: none;
         margin: 0 auto 24px;
+    }
+
+    .title2 {
+        padding: 16px 24px;
     }
 
     .prices-slide {
@@ -169,6 +174,10 @@
         margin: 16px auto;
     }
 
+    .prices-info {
+        padding: 0 24px;
+    }
+
     .prices-info__text {
         max-width: 421px;
         margin-bottom: 16px;
@@ -178,6 +187,14 @@
 
 @media (min-width: 1120px) {
 
+    .prices {
+        padding: 0 32px;
+    }
+
+    .title2 {
+        padding: 16px 0;
+    }
+
     .headline-prices {
         max-width: 1056px;
     }
@@ -186,10 +203,6 @@
         max-width: 1056px;
         margin: 0 auto;
         margin-bottom: 32px;
-    }
-
-    .prices-info {
-        padding-left: 32px;
     }
 
     .headline-prices__empty {
