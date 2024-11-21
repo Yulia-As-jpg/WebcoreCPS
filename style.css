@@ -136,6 +136,10 @@ a {
   margin: 0;
 }
 
+.blog-info__text {
+  margin-bottom: 15px;
+}
+
 .blog-info__desc {
   margin-bottom: 16px;
 }
@@ -173,6 +177,10 @@ a {
 
   .blog-desctop {
       display: none;
+  }
+
+  .blog-info__desc {
+    display: none;
   }
   
   .changing-section {
@@ -229,6 +237,11 @@ a {
     margin-bottom: 16px;
     padding: 0 16px;
   }
+
+  .blog-info__image {
+    margin-bottom: 24px;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -301,11 +314,6 @@ a {
   .blog-info {
       display: flex;
       justify-content: space-between;
-      padding: 0 24px;
-  }
-
-  .title2 {
-    padding: 16px 0 16px 24px;
   }
 
   .wrapper {
@@ -314,11 +322,7 @@ a {
       flex: 1;
       margin-bottom: 50px;
       margin-right: 48px;
-  }
-
-  .wrapper-absolute {
-
-    width: 770px;
+      padding: 0 24px;
   }
 
   .blog-info__image {
@@ -333,17 +337,13 @@ a {
       height: 208px;
   }
 
-  .blog-info__link {
-    margin-bottom: 54px;
-  }
 
 }
 
 @media (min-width: 1120px) {
 
   .wrapper-absolute {
-
-    width: 800px;
+    max-width: 1100px;
   }
 
   .changing-section {
@@ -357,7 +357,6 @@ a {
   .blog-title {
       padding: 10px 32px 8px 0;
       justify-content: space-between;
-      width: 1120px;
   }
 
   .blog-title__heading {
@@ -388,11 +387,6 @@ a {
       flex-wrap: wrap;
       padding-left: 34px;
       padding-right: 29px;
-      width: 1120px;
-  }
-
-  .title2 {
-    padding: 16px 0 16px 32px;
   }
 
   .wrapper {
@@ -407,21 +401,19 @@ a {
   }
 
   .blog-info__image-cps {
-    width: 532px;
-    height: 307px;
     border-radius: 6px;
-  }
-
-  .blog-info__link {
-      margin-bottom: 149px;
-  }
-
-  .content {
-      margin-bottom: 51px;
   }
 }
 
 @media (min-width: 1440px) {
+
+  .blog-title {
+    width: 1120px;
+  }
+
+  .blog-info {
+    width: 1120px;
+  }
 
   .wrapper-absolute {
     width: 1120px;
@@ -462,13 +454,6 @@ a {
     border: 2px solid transparent;
     cursor: pointer;
     display: flex;
-    }
-    
-.blog-nav__link:focus {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    outline: none;
-    background-color: #FFFFFF;
 }
 
 .blog-nav__list {
@@ -477,10 +462,18 @@ a {
     margin-bottom: 24px;
     padding: 0;
 }
-
+    
 .blog-nav__list::-webkit-scrollbar {
     display: none;
 }
+    
+.blog-nav__link:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
 
 @media (min-width: 1120px) {
 
@@ -792,8 +785,13 @@ a {
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 24px;
+        margin: 0 auto 24px;
         padding: 0 24px;
-        margin-bottom: 24px;
+        width: 768px;
+    }
+
+    .title2 {
+        padding: 16px 24px;
     }
 
     .brend-slide {
@@ -840,6 +838,10 @@ a {
 
 @media (min-width: 1120px) {
 
+    .brend {
+        padding: 0 32px;
+    }
+
     .inactive768.inactive {
         display: block;
     }
@@ -848,11 +850,14 @@ a {
         display: none;
     }
 
+    .title2 {
+        padding: 16px 0;
+    }
+
     .brend-wrapper {
         flex-wrap: wrap !important;
         gap: 16px 32px;
         margin-bottom: 24px;
-        padding: 0 32px;
         width: 1100px;
     }
 
@@ -909,12 +914,21 @@ a {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        width: 768px;
         padding: 0 24px;
-        margin-bottom: 24px;
+        margin: 0 auto 24px;
     }
 }
 
 @media (min-width: 1120px) {
+
+    .technic {
+        padding: 0 32px;
+    }
+
+    .title2 {
+        padding: 16px 0;
+    }
 
     .tech-inactiv768 {
         display: block;
@@ -927,7 +941,6 @@ a {
     .technic-wrapper {
         gap: 20px !important;
         width: 1100px;
-        padding: 0 32px;
         margin-bottom: 24px;
     }
 }
@@ -965,10 +978,6 @@ a {
     position: absolute;
     right: 10px;
     top: 10px;
-}
-
-.prices-info {
-    padding-left: 24px;
 }
 
 .prices-info__text {
@@ -1024,6 +1033,11 @@ a {
     }
     .prices-info__text {
         max-width: 288px;
+        padding: 16px 16px 0;
+    }
+
+    .prices-btn__offer {
+        padding-left: 16px;
     }
 }
 
@@ -1046,6 +1060,10 @@ a {
         border-radius: 6px;
         border: none;
         margin: 0 auto 24px;
+    }
+
+    .title2 {
+        padding: 16px 24px;
     }
 
     .prices-slide {
@@ -1102,6 +1120,10 @@ a {
         margin: 16px auto;
     }
 
+    .prices-info {
+        padding: 0 24px;
+    }
+
     .prices-info__text {
         max-width: 421px;
         margin-bottom: 16px;
@@ -1111,6 +1133,14 @@ a {
 
 @media (min-width: 1120px) {
 
+    .prices {
+        padding: 0 32px;
+    }
+
+    .title2 {
+        padding: 16px 0;
+    }
+
     .headline-prices {
         max-width: 1056px;
     }
@@ -1119,10 +1149,6 @@ a {
         max-width: 1056px;
         margin: 0 auto;
         margin-bottom: 32px;
-    }
-
-    .prices-info {
-        padding-left: 32px;
     }
 
     .headline-prices__empty {
