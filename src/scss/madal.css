@@ -101,6 +101,7 @@
 .modal-btn::before {
   content: '';
     background-image: url(../img/dropdown.svg);
+    background-repeat: no-repeat;
     width: 8px;
     height: 10px;
     position: absolute;
