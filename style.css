@@ -9,6 +9,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 img {
@@ -22,11 +24,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.conteiner {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .no-scroll {
@@ -661,6 +658,10 @@ a {
         position: fixed;
         top: 0;
         bottom: 0;
+    }
+
+    .navigator-body {
+        margin-bottom: 150px;
     }
 
     .button-info {
