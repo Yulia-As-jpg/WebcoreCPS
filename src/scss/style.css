@@ -6,11 +6,9 @@ body {
   font-family: "TT Lakes", sans-serif;
   color: #1B1C21;
   background-color: #F8F8F8;
-  margin: 0 auto;
   padding: 0;
   overflow-x: hidden;
   min-width: 320px;
-  max-width: 1440px;
 }
 
 img {
@@ -24,6 +22,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .no-scroll {
@@ -340,13 +343,12 @@ a {
       height: 208px;
   }
 
-
 }
 
 @media (min-width: 1120px) {
 
   .wrapper-absolute {
-    max-width: 1100px;
+    max-width: 800px;
   }
 
   .changing-section {
@@ -411,15 +413,15 @@ a {
 @media (min-width: 1440px) {
 
   .blog-title {
-    width: 1120px;
+    max-width: 1120px;
   }
 
   .blog-info {
-    width: 1120px;
+    max-width: 1120px;
   }
 
   .wrapper-absolute {
-    width: 1120px;
+    max-width: 1120px;
   }
 }
 
