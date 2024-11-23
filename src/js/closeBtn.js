@@ -1,7 +1,6 @@
 import {sideBar, modalCall, modalChat, visibleCall, visibleChat, visibleMenu} from './variables';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Функция для закрытия элемента
   function closeElement(element) {
     if (element) {
       element.classList.add('modal-hide');
@@ -13,7 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function clickCross(evt) {
     evt.preventDefault();
 
-    closeElement(sideBar);
+    const isSmallScreen = window.matchMedia('(max-width: 1119px)').matches;
+
+    if (isSmallScreen) {
+      closeElement(sideBar);
+    }
+
     closeElement(modalCall);
     closeElement(modalChat);
     closeElement(visibleCall);

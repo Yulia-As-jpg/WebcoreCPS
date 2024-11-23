@@ -26,6 +26,9 @@ a {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
 
 .btn {
   background: none;
